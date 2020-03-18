@@ -8,7 +8,6 @@ body {
     padding-top: 56px;
     /* background-color: #45748d; */
     font-family: "Roboto", sans-serif;
-    background-color: red;
 
 }
 
@@ -241,11 +240,381 @@ header.masthead .bg-circle-4 {
     font-size: 20px;
 }
 
- #facebook{
-    width: 200px;
-    height: 100px;
+
+
+
+/*SOCIAL BUTTONS IN FOOTER*/
+.wrapper {
+
+    transform: translate(50%, 20%);
+    width: 550px;
+    margin: 3px 250px;
+
 }
 
+/* Style the Un-order list by setting its list-style to none */
+.wrapper ul {
+    list-style: none;
+}
+
+/* Style the list items inside the UL list, by setting its width, height and line-height
+  and float them to left and set its border and border-radius.
+ */
+.wrapper ul li {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 10px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 50%;
+    border: 5px solid #D8E2DC;
+    float: left;
+    transition: all 0.5s ease;
+}
+
+/* Style the icons by setting its color and margin-top value to 20px
+to align it properly */
+.wrapper ul li .fa {
+    color: #D8E2DC;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+}
+
+/* Now target the specific li classes for styling and use box-shadow effect to border and text-shadow effect
+  to icons for glowing effect and use transition property for smooth transition effect. */
+/*facebook*/
+.wrapper ul li:hover.facebook {
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-facebook {
+    color: #3b5998;
+    text-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+/*twitter*/
+.wrapper ul li:hover.twitter {
+    border: 5px solid #00aced;
+    box-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-twitter {
+    color: #00aced;
+    text-shadow: 0 0 15px #00aced;
+    transition: all 0.5s ease;
+}
+
+/* instagram */
+.wrapper ul li:hover.instagram {
+    border: 5px solid #bc2a8d;
+    box-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-instagram {
+    color: #bc2a8d;
+    text-shadow: 0 0 15px #bc2a8d;
+    transition: all 0.5s ease;
+}
+
+/* google */
+.wrapper ul li:hover.google {
+    border: 5px solid #dd4b39;
+    box-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-google {
+    color: #dd4b39;
+    text-shadow: 0 0 15px #dd4b39;
+    transition: all 0.5s ease;
+}
+
+/* whatsapp */
+.wrapper ul li:hover.whatsapp {
+    border: 5px solid #4dc247;
+    box-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+.wrapper ul li:hover .fa-whatsapp {
+    color: #4dc247;
+    text-shadow: 0 0 15px #4dc247;
+    transition: all 0.5s ease;
+}
+
+
+
+
+
+/*BUY NOW BUTTON*/
+.a.button10 {
+    display: inline-block;
+    color: black;
+    font-size: 125%;
+    font-weight: 700;
+    text-decoration: none;
+    user-select: none;
+    padding: .25em .5em;
+    outline: none;
+    border: 1px solid rgb(250,172,17);
+    border-radius: 7px;
+    background: rgb(255,212,3) linear-gradient(rgb(255,212,3), rgb(248,157,23));
+    box-shadow: inset 0 -2px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,0);
+    transition: box-shadow .2s, border-color .2s;
+}
+.a.button10:hover {
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,0), inset 0 1px 2px rgba(0,0,0,0), inset 0 0 0 60px rgba(255,255,0,.5);
+}
+.a.button10:active {
+    padding: calc(.25em + 1px) .5em calc(.25em - 1px);
+    border-color: rgba(177,159,0,1);
+    box-shadow: inset 0 -1px 1px rgba(0,0,0,.1), inset 0 1px 2px rgba(0,0,0,.3), inset 0 0 0 60px rgba(255,255,0,.45);
+}
+
+
+
+
+
+
+/*REGISTER AND LOG IN FIELDS*/
+
+.clear{
+    clear: both;
+}
+
+.mesage_error{
+    color: #cc0000;
+}
+
+.success_message{
+    color: green;
+}
+
+.block_for_messages{
+    text-align: center;
+}
+
+#header, #footer{
+    border: 2px solid #000;
+}
+
+#header{
+    padding-left: 10px;
+}
+
+#footer{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+#header h2, #footer h2{
+    text-align: center;
+    margin: 0;
+}
+
+#auth_block{
+    width: 290px;
+    float: right;
+    text-align: center;
+    margin: 0 25px;
+}
+
+#auth_block a{
+    display: block;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    width: 110px;
+    height: 30px;
+    text-decoration: none;
+}
+
+#auth_block a:hover{
+    text-decoration: underline;
+}
+
+#link_register{
+    float: left;
+}
+
+#link_auth, #link_logout{
+    float: right;
+}
+
+#link_register a{
+    background: #54d854;
+}
+
+#link_auth a, #link_logout a{
+    background: #4e4eec;
+    text-align: center;
+}
+
+/* Блок с формой регистрации */
+#form_register, #form_auth{
+    width: 305px;
+    /*margin: 0 auto;*/
+    margin: 15px auto;
+    padding: 10px 10px;
+    background: linear-gradient(45deg, #EECFBA, #C5DDE8);
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px aqua;
+}
+
+
+#authorized h2{
+    text-align: center;
+}
+
+.form_auth td{
+    padding: 10px;
+}
+
+
+
+
+/*ABOUT US STYLES*/
+
+.wrap-about{
+    max-width: 650px;
+    margin: 8px auto;
+}
+
+.header {
+    padding: 60px;
+    text-align: center;
+    background: #1abc9c;
+    color: darkviolet;
+    font-size: 30px;
+    background-image: url("images/bg.jpg");
+    background-size: 500px 500px;
+}
+
+.para {
+    padding: 30px;
+    text-align: center;
+    background: yellow;
+    color: white;
+    font-size: 30px;
+}
+
+.logo img
+{
+    width: 150px;
+    height: auto;
+    float:right;
+}
+
+html {
+    box-sizing: border-box;
+}
+*,*:before, *:after {
+    box-sizing: inherit;
+}
+.column {
+    float: left;
+    width: 25.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+.card {
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container ::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+
+}
+.headerbackground {
+    background-image: url("images/home.webp");
+    background-color: #cccccc;
+}
+
+
+
+
+/*CONTACT US PAGE*/
+.contact-form{
+    width: 85%;
+    max-width: 600px;
+    background: #f1f1f1;
+    background: radial-gradient(40% 50%, #FAECD5, #CAE4D8);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 0 20px #000000b3;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 140px;
+}
+
+.contact-form h1{
+    margin-top: 0;
+    font-weight: 200;
+}
+
+.txtb{
+    border: 1px solid gray;
+    margin: 8px 0;
+    padding: 12px 18px;
+    border-right: 8px;
+}
+
+.txtb label{
+    display: block;
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+
+.txtb input, .txtb textarea{
+    width: 100%;
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 18px;
+    margin-top: 6px;
+}
+
+.btn-contact{
+    display: block;
+    background: #9b59b6;
+    padding: 14px 0;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-top: 8px;
+    width: 100%;
+}
+
+.py-5 {
+    height: 250px;
+}
 
 
 
